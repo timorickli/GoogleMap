@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.ar.sceneform.plugin'
+
 
 android {
     compileSdkVersion 29
@@ -41,9 +41,3 @@ dependencies {
     implementation 'com.google.ar:core:1.15.0'
 
 }
-
-
-sceneform.asset('src/main/java/net/ictcampus/paketdienst/models/mailbox.fbx',
-        'default',
-        'src/main/java/net/ictcampus/paketdienst/models/mailbox.sfa',
-        'src/main/res/raw/mailbox')
