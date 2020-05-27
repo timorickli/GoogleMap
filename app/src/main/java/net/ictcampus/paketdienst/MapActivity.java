@@ -55,11 +55,11 @@ public class MapActivity extends Activity implements OnMapReadyCallback, GoogleM
         map.setMyLocationEnabled(true);
         //3D Gebäude
         map.setBuildingsEnabled(true);
-        //Indoor Ebenen
+        //Indoor Ebenen Deaktiviert
         map.getUiSettings().setIndoorLevelPickerEnabled(false);
         //Toolbar
         map.getUiSettings().setMapToolbarEnabled(true);
-        //Kompass
+        //KompassDeaktiviert
         map.getUiSettings().setCompassEnabled(false);
         //Zommsteurerelemente
         map.getUiSettings().setZoomControlsEnabled(true);
@@ -112,6 +112,9 @@ public class MapActivity extends Activity implements OnMapReadyCallback, GoogleM
         }
         return false;
     }
+
+
+    //Methoden nichts mit google Api zu tun
     //Kreiert ein Zufälliger Längengrad im Umkreis von ca. 100 Meter
     private double getLong(){
         Random random= new Random();
